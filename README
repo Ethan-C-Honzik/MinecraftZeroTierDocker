@@ -1,0 +1,3 @@
+Automatically spins up a zero tier client and minecraft server connecting it to said zero tier instance. Subsequent runs will retain the same zero tier identity
+
+To use swap out the jar in the compose file as well as the <Your network ID> with your actual network id then run `docker compose up`
