@@ -23,6 +23,9 @@ services:
 
     zerotier:
         image: zerotier/zerotier:latest
+        ports: # Optionally open to LAN as well as zero tier network 
+            - 25565:25565
+            - 24454:24454/udp
         container_name: zerotier-client
         cap_add:
             - NET_ADMIN
